@@ -1275,12 +1275,12 @@ section {
   height: 60px;
   bottom: 10px;
   left: 40px;
-  background-color: #e43c5c;
+  background-color: #cc1616;
   color: #fff;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
-  box-shadow: 2px 2px 3px #e43c5c;
+  box-shadow: 2px 2px 3px #cc1616;
   z-index: 100;
 }
 .whatsapp-icon {
