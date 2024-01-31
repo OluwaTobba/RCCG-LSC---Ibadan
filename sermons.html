@@ -42,6 +42,10 @@
       height: auto;
     }
 
+    .popup-title {
+      margin-bottom: 10px;
+    }
+
     .sermon-container {
       display: flex;
       justify-content: space-around;
@@ -49,30 +53,14 @@
     }
 
     .sermon-box {
-      width: 100%;
+      flex: 0 0 calc(33.3333% - 20px);
       margin-bottom: 20px;
     }
-    
-    .popup {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      justify-content: center;
-      align-items: center;
-    }
 
-    .popup-content {
-      background-color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .popup-title {
-      margin-bottom: 10px;
+    /* Custom class for wider modal */
+    .wider-modal .modal-dialog {
+      max-width: 800px;
+      width: 80%;
     }
   </style>
 
@@ -159,7 +147,7 @@
         <!--each sermon-->
         <div class="container mt-5">
           <div class="row">
-            <div class="col-sm-4 col-md-4 col-lg-3">
+            <div class="col-sm-4 col-md-4 col-lg-3 sermon-box">
               <div class="schedule-box maxwidth500 bg-light mb-30">
                 <div class="thumb thumbnail">
                   <a class="popup-youtube" href="#" data-toggle="modal" data-target="#videoModal2">
@@ -169,7 +157,7 @@
                 <div class="schedule-details clearfix p-15 pt-10">
                   <h5 class="font-16 title popup-title" data-toggle="modal" data-target="#videoModal">SUNDAY SERMON</h5>
                   <ul class="list-inline font-11 mb-20">
-                    <li><i class="fa fa-calendar mr-5"></i>January, 28th 2024</li>
+                    <li><i class="fa fa-calendar mr-5"></i> January, 28th 2024</li>
                     <li><i class="fa fa-map-marker mr-5"></i> RCCG LSC IB.</li>
                   </ul>
                   <div class="mt-10">
@@ -199,7 +187,7 @@
       <!--each sermon-->
       <div class="container mt-5">
         <div class="row">
-          <div class="col-sm-4 col-md-4 col-lg-3">
+          <div class="col-sm-4 col-md-4 col-lg-3 sermon-box">
             <div class="schedule-box maxwidth500 bg-light mb-30">
               <div class="thumb thumbnail">
                 <a class="popup-youtube" href="#" data-toggle="modal" data-target="#videoModal1">
@@ -209,7 +197,7 @@
               <div class="schedule-details clearfix p-15 pt-10">
                 <h5 class="font-16 title popup-title" data-toggle="modal" data-target="#videoModal">SUNDAY SERMON</h5>
                 <ul class="list-inline font-11 mb-20">
-                  <li><i class="fa fa-calendar mr-5"></i>January, 21st 2024</li>
+                  <li><i class="fa fa-calendar mr-5"></i> January, 21st 2024</li>
                   <li><i class="fa fa-map-marker mr-5"></i> RCCG LSC IB.</li>
                 </ul>
                 <div class="mt-10">
@@ -239,7 +227,7 @@
     <!--each sermon-->
     <div class="container mt-5">
       <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-3">
+        <div class="col-sm-4 col-md-4 col-lg-3 sermon-box">
           <div class="schedule-box maxwidth500 bg-light mb-30">
             <div class="thumb thumbnail">
               <a class="popup-youtube" href="#" data-toggle="modal" data-target="#videoModal">
@@ -249,7 +237,7 @@
             <div class="schedule-details clearfix p-15 pt-10">
               <h5 class="font-16 title popup-title" data-toggle="modal" data-target="#videoModal1">SUNDAY SERMON</h5>
               <ul class="list-inline font-11 mb-20">
-                <li><i class="fa fa-calendar mr-5"></i>January, 14th 2024</li>
+                <li><i class="fa fa-calendar mr-5"></i> January, 14th 2024</li>
                 <li><i class="fa fa-map-marker mr-5"></i> RCCG LSC IB.</li>
               </ul>
               <div class="mt-10">
@@ -368,6 +356,15 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // Pause the video when the modal is closed
+    $('[id^=videoModal]').on('hidden.bs.modal', function () {
+    var iframe = $(this).find('iframe')[0];
+    var src = iframe.src;
+    iframe.src = src;
+  });
+  </script>
 
 </body>
 
