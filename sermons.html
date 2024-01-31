@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>RCCG LSC - The Seed Place - Sermons</title>
+  <title>Sermons - RCCG LSC - The Seed Place</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -23,12 +23,58 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- Whatsapp Chatbot -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <style>
+    .thumbnail {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .thumbnail img {
+      width: 100%;
+      height: auto;
+    }
+
+    .sermon-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .sermon-box {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup-content {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .popup-title {
+      margin-bottom: 10px;
+    }
+  </style>
 
 </head>
 
@@ -45,7 +91,8 @@
         <a href="https://facebook.com/rccglscib" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
         <a href="https://instagram.com/rccglscib" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
         <a href="https://x.com/@rccglscib" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
-        <a href="https://youtube.com/@rccglsc_ib" class="linkedin" target="_blank"><i class="bi bi-youtube"></i></i></a>
+        <a href="https://youtube.com/@rccglsc_ib" class="youtube" target="_blank"><i class="bi bi-youtube"></i></i></a>
+        <a href="https://tiktok.com/@rccglscib" class="tiktok" target="_blank"><i class="bx bxl-tiktok"></i></a>
       </div>
     </div>
   </section>
@@ -107,11 +154,129 @@
     </section><!-- End Breadcrumbs -->
 
     <section class="inner-page">
-      <div class="container">
-        <p>
-          Example inner page template
-        </p>
+      <div class="container sermon-container">
+
+        <!--each sermon-->
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-3">
+              <div class="schedule-box maxwidth500 bg-light mb-30">
+                <div class="thumb thumbnail">
+                  <a class="popup-youtube" href="#" data-toggle="modal" data-target="#videoModal2">
+                    <img class="img-fullwidth fa fa-youtube-play" alt="" src="/assets/img/portfolio/portfolio-8.jpg">
+                  </a>
+                </div>
+                <div class="schedule-details clearfix p-15 pt-10">
+                  <h5 class="font-16 title popup-title" data-toggle="modal" data-target="#videoModal">SUNDAY SERMON</h5>
+                  <ul class="list-inline font-11 mb-20">
+                    <li><i class="fa fa-calendar mr-5"></i>January, 28th 2024</li>
+                    <li><i class="fa fa-map-marker mr-5"></i> RCCG LSC IB.</li>
+                  </ul>
+                  <div class="mt-10">
+                    <!-- Button trigger modal -->
+                    <a class="btn btn-dark btn-theme-colored btn-sm mt-10" href="#" data-toggle="modal" data-target="#videoModal2">View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- The Modal -->
+        <div class="modal fade" id="videoModal2" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <!-- Embed the video here -->
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/gAb6zmKVaMc?si=U2WQPsG8mAm2Ke2c" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!--end of each sermon-->
+
+      <!--each sermon-->
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-3">
+            <div class="schedule-box maxwidth500 bg-light mb-30">
+              <div class="thumb thumbnail">
+                <a class="popup-youtube" href="#" data-toggle="modal" data-target="#videoModal1">
+                  <img class="img-fullwidth fa fa-youtube-play" alt="" src="/assets/img/portfolio/portfolio-8.jpg">
+                </a>
+              </div>
+              <div class="schedule-details clearfix p-15 pt-10">
+                <h5 class="font-16 title popup-title" data-toggle="modal" data-target="#videoModal">SUNDAY SERMON</h5>
+                <ul class="list-inline font-11 mb-20">
+                  <li><i class="fa fa-calendar mr-5"></i>January, 21st 2024</li>
+                  <li><i class="fa fa-map-marker mr-5"></i> RCCG LSC IB.</li>
+                </ul>
+                <div class="mt-10">
+                  <!-- Button trigger modal -->
+                  <a class="btn btn-dark btn-theme-colored btn-sm mt-10" href="#" data-toggle="modal" data-target="#videoModal1">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- The Modal -->
+      <div class="modal fade" id="videoModal1" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <!-- Embed the video here -->
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/AIveaO_c2FE?si=jjpwaW62becWXoub" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end of each sermon-->
+
+    <!--each sermon-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-3">
+          <div class="schedule-box maxwidth500 bg-light mb-30">
+            <div class="thumb thumbnail">
+              <a class="popup-youtube" href="#" data-toggle="modal" data-target="#videoModal">
+                <img class="img-fullwidth fa fa-youtube-play" alt="" src="/assets/img/portfolio/portfolio-8.jpg">
+              </a>
+            </div>
+            <div class="schedule-details clearfix p-15 pt-10">
+              <h5 class="font-16 title popup-title" data-toggle="modal" data-target="#videoModal1">SUNDAY SERMON</h5>
+              <ul class="list-inline font-11 mb-20">
+                <li><i class="fa fa-calendar mr-5"></i>January, 14th 2024</li>
+                <li><i class="fa fa-map-marker mr-5"></i> RCCG LSC IB.</li>
+              </ul>
+              <div class="mt-10">
+                <!-- Button trigger modal -->
+                <a class="btn btn-dark btn-theme-colored btn-sm mt-10" href="#" data-toggle="modal" data-target="#videoModal">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <!-- Embed the video here -->
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/_L7a0IVWXnk?si=5YAZ1binAojkvkGK" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end of each sermon-->
+
+
     </section>
 
   </main><!-- End #main -->
@@ -136,6 +301,7 @@
                 <a href="https://instagram.com/rccglscib" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
                 <a href="https://x.com/@rccglscib" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
                 <a href="https://youtube.com/@rccglsc_ib" class="youtube" target="_blank"><i class="bx bxl-youtube"></i></a>
+                <a href="https://tiktok.com/@rccglscib" class="tiktok" target="_blank"><i class="bx bxl-tiktok"></i></a>
               </div>
             </div>
           </div>
@@ -196,6 +362,9 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
