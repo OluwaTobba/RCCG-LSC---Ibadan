@@ -443,6 +443,22 @@ h6 {
   font-size: 24px;
 }
 
+#hero .sermons:hover {
+  background: #cc1616;
+  border-color: #cc1616;
+}
+
+#hero .first-timer {
+  border: 2px solid #cc1616 !important;
+  background: #cc1616;
+}
+
+#hero .first-timer:hover {
+  border: 2px solid #fff !important;
+  background: transparent;
+  border-color: #fff;
+}
+
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -454,11 +470,6 @@ h6 {
   transition: 0.5s;
   border: 2px solid #fff;
   color: #fff;
-}
-
-#hero .btn-get-started:hover {
-  background: #cc1616;
-  border-color: #cc1616;
 }
 
 @media (min-width: 1024px) {
@@ -615,34 +626,6 @@ section {
 .why-us .box:hover h4,
 .why-us .box:hover p {
   color: #fff;
-}
-
-/*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
-.clients {
-  background: #f2f2f2;
-  padding: 15px 0;
-  text-align: center;
-}
-
-.clients img {
-  width: 50%;
-  filter: grayscale(100);
-  transition: all 0.4s ease-in-out;
-  display: inline-block;
-  padding: 15px 0;
-}
-
-.clients img:hover {
-  filter: none;
-  transform: scale(1.2);
-}
-
-@media (max-width: 768px) {
-  .clients img {
-    width: 40%;
-  }
 }
 
 /*--------------------------------------------------------------
