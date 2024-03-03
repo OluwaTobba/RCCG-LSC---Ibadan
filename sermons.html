@@ -46,10 +46,11 @@
       margin-bottom: 10px;
     }
 
-    .row {
+    .services .row {
       display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
+      flex-direction: wrap;
+      justify-content: flex-start;
+      align-items: center;
     }
   </style>
 
@@ -135,9 +136,46 @@
     <section class="services">
       <div class="container">
 
-        <!--each sermon-->
+        <!------------------------------------each sermon----------------------------------------->
         <div class="row mt-5">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+          <div class="col-12 col-sm-4 col-md-4 col-lg-3 sermon-box" data-aos="fade-up">
+            <div class="schedule-box maxwidth500 bg-light mb-30">
+              <div class="thumb thumbnail">
+                <a class="popup-youtube" href="#" data-toggle="modal" data-target="#videoModal3">
+                  <img class="img-fullwidth fa fa-youtube-play" alt="" src="/assets/img/portfolio/portfolio-8.jpg">
+                </a>
+              </div>
+              <div class="schedule-details clearfix p-15 pt-10">
+                <h5 class="font-16 title popup-title" data-toggle="modal" data-target="#videoModal3">SUNDAY SERMON</h5>
+                <ul class="list-inline font-11 mb-20">
+                  <li><i class="fa fa-calendar mr-5"></i>   February, 25th 2024</li>
+                  <li><i class="fa fa-map-marker mr-5"></i>   RCCG LSC IB.</li>
+                </ul>
+                <div class="mt-10">
+                  <!-- Button trigger modal -->
+                  <a class="btn btn-dark btn-theme-colored btn-sm mt-10" href="#" data-toggle="modal" data-target="#videoModal3">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- The Modal -->
+        <div class="modal fade" id="videoModal3" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <!-- Embed the video here -->
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/1hhwGfP5ps8?si=MSXy-DN1jTUT5aM8" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div><!--end of each sermon-->
+
+
+        <!------------------------------each sermon-------------------------------------->
+        <div class="row mt-5">
+          <div class="col-12 col-sm-4 col-md-4 col-lg-3 sermon-box" data-aos="fade-up">
             <div class="schedule-box maxwidth500 bg-light mb-30">
               <div class="thumb thumbnail">
                 <a class="popup-youtube" href="#" data-toggle="modal" data-target="#videoModal2">
@@ -171,9 +209,10 @@
           </div>
         </div><!--end of each sermon-->
 
-        <!--each sermon-->
+
+        <!----------------------------each sermon----------------------------------->
         <div class="row mt-5">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+          <div class="col-12 col-sm-4 col-md-4 col-lg-3 sermon-box" data-aos="fade-up">
             <div class="schedule-box maxwidth500 bg-light mb-30">
               <div class="thumb thumbnail">
                 <a class="popup-youtube" href="#" data-toggle="modal" data-target="#videoModal1">
@@ -207,8 +246,9 @@
           </div>
         </div><!--end of each sermon-->
 
-        <!--each sermon-->
-        <div class="row">
+
+        <!--------------------------------each sermon-------------------------------------->
+        <div class="row mt-5">
           <div class="col-12 col-sm-4 col-md-4 col-lg-3 sermon-box">
             <div class="schedule-box maxwidth500 bg-light mb-30">
               <div class="thumb thumbnail">

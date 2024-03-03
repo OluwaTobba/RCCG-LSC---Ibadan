@@ -942,7 +942,7 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
-.pricing .box {
+/* .pricing .box {
   padding: 20px;
   background: #f9f9f9;
   text-align: center;
@@ -1056,11 +1056,15 @@ section {
 .pricing .featured .btn-buy:hover {
   background: #fff;
   color: #cc1616;
-}
+} */
 
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+.team .row{
+  justify-content: center;
+}
+
 .team .member {
   text-align: center;
   margin-bottom: 20px;
