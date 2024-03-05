@@ -233,3 +233,28 @@
   });
 
 })()
+
+
+var toggleTitheInfoButton = document.getElementById('toggleTitheInfoButton');
+var titheInfo = document.getElementById('titheInfo');
+
+var toggleOfferingInfoButton = document.getElementById('toggleOfferingInfoButton');
+var offeringInfo = document.getElementById('offeringInfo');
+
+toggleTitheInfoButton.addEventListener('click', function() {
+    // Toggle the display of the tithe information
+    if (titheInfo.style.display === 'block') {
+        titheInfo.style.display = 'none';
+    } else {
+        titheInfo.style.display = 'block';
+    }
+});
+
+toggleOfferingInfoButton.addEventListener('click', function() {
+    // Toggle the display of the offering information
+    if (offeringInfo.style.display === 'block') {
+        offeringInfo.style.display = 'none';
+    } else {
+        offeringInfo.style.display = 'block';
+    }
+});

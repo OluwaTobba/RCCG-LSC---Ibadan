@@ -857,189 +857,81 @@ section {
   bottom: 20px;
 }
 
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
+/* ****************
+Online Giving
+****************** */
+/* .online_giving img {
   width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #cc1616;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #cc1616;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(25, 25, 25, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-/* .pricing .box {
-  padding: 20px;
-  background: #f9f9f9;
-  text-align: center;
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
-}
-
-.pricing .box h3 {
-  font-weight: 400;
-  padding: 15px;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #191919;
-}
-
-.pricing .box h4 {
-  font-size: 42px;
-  color: #cc1616;
-  font-weight: 500;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 20px;
-}
-
-.pricing .box h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing .box h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing .box ul {
-  padding: 0;
-  list-style: none;
-  color: #191919;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing .box ul li {
-  padding-bottom: 16px;
-}
-
-.pricing .box ul i {
-  color: #cc1616;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing .box ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .box .btn-wrap {
-  padding: 15px;
-  text-align: center;
-}
-
-.pricing .box .btn-buy {
-  background: #cc1616;
-  display: inline-block;
-  padding: 10px 40px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.pricing .box .btn-buy:hover {
-  background: #e82d2d;
-}
-
-.pricing .featured {
-  background: #cc1616;
-  box-shadow: none;
-  color: #fff;
-}
-
-.pricing .featured h3,
-.pricing .featured h4,
-.pricing .featured ul,
-.pricing .featured ul li,
-.pricing .featured ul .na {
-  color: #fff;
-}
-
-.pricing .featured h4 span {
-  color: rgba(255, 255, 255, 0.58);
-}
-
-.pricing .featured .btn-wrap {
-  padding: 15px;
-  text-align: center;
-}
-
-.pricing .featured .btn-buy {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.pricing .featured .btn-buy:hover {
-  background: #fff;
-  color: #cc1616;
 } */
+
+.tithe {
+  margin-top: 40px;
+  position: relative;
+}
+
+.tithe::after {
+  content: "";
+  background: #e82d2d;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  margin-top: 30px;
+}
+
+.tithe_flex,
+.offering_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tithe_flex button,
+.offering_flex button {
+  background: #e82d2d;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  transition: ease-in-out 0.4s;
+  border: none;
+}
+
+.tithe_flex button:hover,
+.offering_flex button:hover {
+  background: #fff;
+  color: #e82d2d;
+}
+
+.offering_flex {
+  margin-top: 40px;
+}
+
+.offering{
+  margin-top: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media all and (max-width: 770px) {
+  .tithe_flex,
+  .offering_flex {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .tithe_flex button,
+  .offering_flex button {
+    margin-top: 8rem;
+  }
+
+  .tithe_flex button,
+  .offering_flex button {
+  margin-top: 40px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Team
